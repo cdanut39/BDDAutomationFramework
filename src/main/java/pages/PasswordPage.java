@@ -1,11 +1,10 @@
 package pages;
 
-import base.TestBase;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class PasswordPage extends TestBase {
+public class PasswordPage extends GeneralActions {
     @FindBy(id = "password")
     private WebElement password_input;
     @FindBy(xpath = "//button[contains(text(),'Continua')]")
@@ -15,8 +14,8 @@ public class PasswordPage extends TestBase {
         PageFactory.initElements(driver, this);
     }
 
-    public void insertPassword()  {
-        password_input.sendKeys(prop.getProperty("password"));
+    public void insertPassword() throws Exception {
+        sendKeysToWebElement(password_input, prop.getProperty("PASSWORD"));
     }
 
     public HomePage clickOnContinuaButton() {

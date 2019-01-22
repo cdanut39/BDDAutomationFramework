@@ -18,7 +18,7 @@ public class SearchStepDef extends TestBase {
 
     //preconditions of the test
     @Given("^user is logged in$")
-    public void user_is_logged_in() {
+    public void user_is_logged_in() throws Exception {
         TestBase.intialization();
         defaultPage = new DefaultPage();
         emailPage = defaultPage.clickOnSignInButton();
@@ -30,7 +30,7 @@ public class SearchStepDef extends TestBase {
 
 
     @When("^user search for \"(.*)\"$")
-    public void user_search_for_product(String productName) {
+    public void user_search_for_product(String productName) throws Exception {
         resultsPage = homePage.searchProduct(productName);
 
     }

@@ -8,3 +8,4 @@ Feature: Login
     And user enters the password
     And user clicks on Login button
     Then a new page with a welcome message is displayed
+

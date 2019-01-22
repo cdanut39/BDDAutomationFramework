@@ -1,12 +1,12 @@
 package pages;
 
-import base.TestBase;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-public class EmailPage extends TestBase {
+public class EmailPage extends GeneralActions {
     @FindBy(id = "email")
     private WebElement email_input;
     @FindBy(xpath = "//button[contains(text(),'Continua')]")
@@ -16,16 +16,13 @@ public class EmailPage extends TestBase {
         PageFactory.initElements(driver, this);
     }
 
-    //write in the email text box the email address provided in config.properties file
-    public void insertEmail()  {
+    public void insertEmail() throws Exception {
 
-        email_input.sendKeys(prop.getProperty("email"));
+        sendKeysToWebElement(email_input, prop.getProperty("EMAIL"));
     }
 
     public PasswordPage clickOnContinueButton() {
         continua_button.click();
-
-        //after clicking the button "Continua", a new page will be displayed --> PasswordPage
         return new PasswordPage();
     }
 }

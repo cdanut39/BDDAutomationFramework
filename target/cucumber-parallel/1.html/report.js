@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("D:/workspace/BDD Automation Framework/src/main/java/features/Login.feature");
 formatter.feature({
   "line": 1,
   "name": "Login",
@@ -54,46 +54,46 @@ formatter.match({
   "location": "LoginStepDef.user_is_on_eMAG_page()"
 });
 formatter.result({
-  "duration": 6305573375,
+  "duration": 7723197213,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDef.user_wants_to_access_his_account()"
 });
 formatter.result({
-  "duration": 4277077467,
+  "duration": 1151312571,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDef.user_enters_his_credentials()"
 });
 formatter.result({
-  "duration": 260485252,
+  "duration": 358907601,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDef.userEntersThePassword()"
 });
 formatter.result({
-  "duration": 122077072,
+  "duration": 235471696,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDef.user_clicks_on_Login_button()"
 });
 formatter.result({
-  "duration": 3160519114,
+  "duration": 3250474442,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDef.a_new_page_with_a_welcome_message_is_displayed()"
 });
 formatter.result({
-  "duration": 240800306,
+  "duration": 539403881,
   "status": "passed"
 });
 formatter.after({
-  "duration": 482253,
+  "duration": 410742,
   "status": "passed"
 });
 });

@@ -1,19 +1,16 @@
 package pages;
 
-import base.TestBase;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class HomePage extends TestBase {
+public class HomePage extends GeneralActions {
 
 
     @FindBy(xpath = "//span[text()=' Contul meu ']")
     private WebElement contulMeuButton;
 
-    @FindBy(xpath = "//div[@class='ph-dropdown-inner']//strong[contains(text(),'Salut, ')]")
+    @FindBy(xpath = "//div[@class='ph-dropdown-inner']//strong[text()='Salut, Cristea Danut']")
     private WebElement welcomeMessage;
 
     @FindBy(id = "searchboxTrigger")
@@ -27,22 +24,20 @@ public class HomePage extends TestBase {
         PageFactory.initElements(driver, this);
     }
 
-    public void hoverContulMeu()  {
-        Actions action = new Actions(driver);
-        wait.until(ExpectedConditions.elementToBeClickable(contulMeuButton));
-        action.moveToElement(contulMeuButton).build().perform();
+    public void hoverContulMeu() throws Exception {
+        actionMove(contulMeuButton);
     }
 
-    public String getWelcomeMessageText() {
+    public String getWelcomeMessageText() throws Exception {
         hoverContulMeu();
-        return welcomeMessage.getText();
+        return getTextFromElement(welcomeMessage);
     }
 
-    public ResultsPage searchProduct(String productName) {
-        //write the name of the product in the search box
-        searchBox.sendKeys(productName);
-        searchButton.click();
-        //return the landing page with results
+
+    public ResultsPage searchProduct(String productName) throws Exception {
+        sendKeysToWebElement(searchBox, productName);
+        waitAndClickElement(searchButton);
         return new ResultsPage();
+
     }
 }

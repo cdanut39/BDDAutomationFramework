@@ -1,6 +1,5 @@
 package pages;
 
-import base.TestBase;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
@@ -9,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ResultsPage extends TestBase {
+public class ResultsPage extends GeneralActions {
 
     //find multiple web elements
     @FindBys({@FindBy(xpath = "//h2/a")})
@@ -25,7 +24,7 @@ public class ResultsPage extends TestBase {
         List<Boolean> titlesList = new ArrayList<>();
         for (WebElement element : resultsList) {
             //add in list true or false depending on searched product name existence
-            titlesList.add(element.getText().contains(productName));
+            titlesList.add(getTextFromElement(element).contains(productName));
         }
         return titlesList;
     }
