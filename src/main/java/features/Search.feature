@@ -7,6 +7,6 @@ Feature: Search functionality
     Then a page with "<results>" is displayed
 
     Examples:
-      | product | results |
+      | product         | results |
       | telefon samsung | Samsung |
-      | laptop dell   | Dell  |
+      | laptop dell     | Dell    |

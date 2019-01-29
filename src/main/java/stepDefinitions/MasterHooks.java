@@ -17,5 +17,7 @@ public class MasterHooks extends TestBase {
             takeScreenShot(scenario);
             System.out.println("Screenshot taken!");
         }
+//        driver.quit();
     }
+
 }

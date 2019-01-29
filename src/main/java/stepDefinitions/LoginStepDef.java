@@ -51,6 +51,6 @@ public class LoginStepDef extends TestBase{
     @Then("^a new page with a welcome message is displayed$")
     public void a_new_page_with_a_welcome_message_is_displayed() throws Exception {
         //Asserts helps us to verify the conditions of the test and decide whether test has failed or passed
-        Assert.assertEquals(homePage.getWelcomeMessageText(), "Salut, Cristea Danut");
+        Assert.assertEquals(homePage.getWelcomeMessageText(), "Salut, Cristea Dan");
     }
 }
