@@ -1,6 +1,6 @@
 Feature: Search functionality
 
-  @Search
+  @Search @scenarioOutline
   Scenario Outline: Search a valid product
     Given user is logged in
     When user search for "<product>"

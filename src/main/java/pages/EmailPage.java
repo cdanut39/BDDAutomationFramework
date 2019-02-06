@@ -16,13 +16,12 @@ public class EmailPage extends GeneralActions {
         PageFactory.initElements(driver, this);
     }
 
-    public void insertEmail() throws Exception {
-
+    public void insertEmail() {
         sendKeysToWebElement(email_input, prop.getProperty("EMAIL"));
     }
 
-    public PasswordPage clickOnContinueButton() {
-        continua_button.click();
+    public PasswordPage clickOnContinueButton(){
+        waitAndClickElement(continua_button);
         return new PasswordPage();
     }
 }

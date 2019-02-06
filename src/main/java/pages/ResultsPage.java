@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ResultsPage extends GeneralActions {
 
@@ -18,15 +19,14 @@ public class ResultsPage extends GeneralActions {
         PageFactory.initElements(driver, this);
     }
 
-    //method to get the name of each product
-    public List<Boolean> containsProductsName(String productName) {
-        //create a list of boolean
-        List<Boolean> titlesList = new ArrayList<>();
-        for (WebElement element : resultsList) {
-            //add in list true or false depending on searched product name existence
-            titlesList.add(getTextFromElement(element).contains(productName));
-        }
-        return titlesList;
+    //method to get the size of filtered products list
+    public int getListSizeByKeyword(String keyword) {
+        List<String> filteredTitles = resultsList.stream().map(WebElement::getText).filter(x -> x.contains(keyword)).collect(Collectors.toList());
+        return filteredTitles.size();
+    }
+
+    public int getListSizeOfAllProducts() {
+        return resultsList.size();
     }
 
 }

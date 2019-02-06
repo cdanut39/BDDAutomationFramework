@@ -1,0 +1,131 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6557946892,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Login with valid credentials",
+        "description": "",
+        "id": "login;login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 606499756,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.takeScreenshotOnFailure(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3841502,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on eMAG page",
+            "match": {
+              "location": "LoginStepDef.user_is_on_eMAG_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 618435305,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user wants to access his account",
+            "match": {
+              "location": "LoginStepDef.user_wants_to_access_his_account()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 422824563,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters his email",
+            "match": {
+              "location": "LoginStepDef.user_enters_his_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 827676244,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters the password",
+            "match": {
+              "location": "LoginStepDef.userEntersThePassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2933924958,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on Login button",
+            "match": {
+              "location": "LoginStepDef.user_clicks_on_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 175488301,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "a new page with a welcome message is displayed",
+            "match": {
+              "location": "LoginStepDef.a_new_page_with_a_welcome_message_is_displayed(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Expected Message",
+                  "Salut, Cristea Danut"
+                ],
+                "line": 11
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "D:/workspace/BDD Automation Framework/src/main/java/features/Login1.feature"
+  }
+]

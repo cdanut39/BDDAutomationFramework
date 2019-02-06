@@ -1,9 +1,13 @@
 package utils;
 
-import base.TestBase;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
+
+import static pages.GeneralActions.getLocator;
 
 
 public class WebEventListener implements WebDriverEventListener {
@@ -27,11 +31,11 @@ public class WebEventListener implements WebDriverEventListener {
     }
 
     public void beforeClickOn(WebElement element, WebDriver driver) {
-        log.info("Trying to click on: " + element.toString());
+//        log.info("Trying to click on: " + element);
     }
 
     public void afterClickOn(WebElement element, WebDriver driver) {
-        log.info("Clicked on: " + element.toString());
+//        log.info("Clicked on: " + element);
     }
 
     public void beforeNavigateBack(WebDriver driver) {
@@ -51,21 +55,21 @@ public class WebEventListener implements WebDriverEventListener {
     }
 
     public void onException(Throwable error, WebDriver driver) {
-        log.info("Exception occured: " + error);
+//        log.info("Exception occured: " + error.getMessage());
     }
 
     public void beforeFindBy(By by, WebElement element, WebDriver driver) {
-        log.info("Trying to find Element By : " + by.toString());
+//        log.info("Trying to find Element By : " + by.toString());
     }
 
     public void afterFindBy(By by, WebElement element, WebDriver driver) {
-        try {
-            if (driver.findElement(by).isDisplayed()) {
-                log.info("Found Element By : " + by.toString());
-            }
-        } catch (NoSuchElementException e) {
-            log.info("Element NOT found By : " + by.toString());
-        }
+//        try {
+//            if (driver.findElement(by).isDisplayed()) {
+//                log.info("Found Element By : " + by.toString());
+//            }
+//        } catch (NoSuchElementException e) {
+//            log.info("Element NOT found By : " + by.toString());
+//        }
     }
 
     /*
@@ -122,8 +126,8 @@ public class WebEventListener implements WebDriverEventListener {
 
     }
 
-    public void afterGetText(WebElement arg0, WebDriver arg1, String arg2) {
-        // TODO Auto-generated method stub
+    public void afterGetText(WebElement element, WebDriver driver, String text) {
+        log.info("The following text was extracted: \"" + element.getText() + "\" from the WebElement" + getLocator(element));
 
     }
 
@@ -138,7 +142,7 @@ public class WebEventListener implements WebDriverEventListener {
     }
 
     public void beforeGetText(WebElement arg0, WebDriver arg1) {
-        // TODO Auto-generated method stub
+        log.info("Before getting the text...");
 
     }
 

@@ -2,9 +2,12 @@ package base;
 
 import config.Constants;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -18,6 +21,8 @@ import java.util.concurrent.TimeUnit;
 
 public class TestBase {
 
+    //create log object to trace actions performed during execution
+    static Logger log = Logger.getLogger(TestBase.class);
     //Objects declaration
     public static WebDriver driver;
     public static Properties prop;
@@ -33,41 +38,82 @@ public class TestBase {
             prop.load(fis);
         } catch (
                 FileNotFoundException e) {
-            System.out.println("The properties file couldn't be found in the specified location ");
+            log.error("The properties file couldn't be found in the specified location");
         } catch (
                 IOException e) {
-            System.out.println("Couldn't read information from specified properties file");
+            log.error("Couldn't read information from specified properties file");
         }
     }
 
     public static void intialization() {
+        log.info("*******************************************************************************************");
         String browserName = prop.getProperty("BROWSER");
 
-        //choose the browser for tests execution
+        if (prop.getProperty("HEADLESS").equalsIgnoreCase("yes")) {
+            //choose the browser for tests execution
+            getBrowserHeadlessMode(browserName);
+            log.info(prop.getProperty("BROWSER").toUpperCase() + " browser in HEADLESS mode is launched!");
+        } else if (prop.getProperty("HEADLESS").equalsIgnoreCase("no")) {
+            getBrowserNormalMode(browserName);
+            log.info(prop.getProperty("BROWSER").toUpperCase() + " browser is launched!");
+        } else {
+            log.error("Set a valid value for HEADLESS property");
+        }
+        setDriverPreferences();
+        //launch the browser and navigate to the address specified in properties file
+        setEnvironment(prop.getProperty("ENVIRONMENT"));
+    }
+
+    private static WebDriver getBrowserHeadlessMode(String browserName) {
         try {
-            switch (browserName) {
-                case "chrome":
-                    if (driver == null) {
-                        WebDriverManager.chromedriver().setup();
-                        driver = new ChromeDriver();
-                        break;
-                    }
-                case "firefox":
-                    if (driver == null) {
-                        WebDriverManager.firefoxdriver().setup();
-                        driver = new FirefoxDriver();
-                        break;
-                    }
-                case "ie":
-                    if (driver == null) {
-                        WebDriverManager.iedriver().setup();
-                        driver = new InternetExplorerDriver();
-                        break;
-                    }
+            switch (browserName.toUpperCase()) {
+                case "CHROME":
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver(getChromeOptions());
+                    break;
+
+                case "FIREFOX":
+                    WebDriverManager.firefoxdriver().setup();
+                    driver = new FirefoxDriver(getFireFoxOptions());
+                    break;
+                default:
+                    log.error("Unable to load the browser in HEADLESS mode");
             }
         } catch (Exception e) {
-            System.out.println("Unable to load the browser");
+            e.printStackTrace();
         }
+        return driver;
+    }
+
+    private static WebDriver getBrowserNormalMode(String browserName) {
+        try {
+            switch (browserName.toUpperCase()) {
+                case "CHROME":
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver();
+                    break;
+
+                case "FIREFOX":
+                    WebDriverManager.firefoxdriver().setup();
+                    driver = new FirefoxDriver();
+                    break;
+
+                case "IE":
+
+                    WebDriverManager.iedriver().setup();
+                    driver = new InternetExplorerDriver();
+                    break;
+                default:
+                    log.error("Unable to load the browser in NORMAL mode");
+
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return driver;
+    }
+
+    private static void setDriverPreferences() {
         //instantiate an object of explicit wait type
         wait = new WebDriverWait(driver, 10);
 
@@ -82,10 +128,6 @@ public class TestBase {
 
         driver.manage().timeouts().pageLoadTimeout(Constants.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
-
-        //launch the browser and navigate to the address specified in properties file
-
-        setEnvironment(prop.getProperty("ENVIRONMENT"));
     }
 
     private static void setEnvironment(String environment) {
@@ -95,4 +137,17 @@ public class TestBase {
             driver.get(prop.getProperty("URL_QA"));
         }
     }
+
+    public static ChromeOptions getChromeOptions() {
+        ChromeOptions options = new ChromeOptions();
+        options.setHeadless(true);
+        return options;
+    }
+
+    private static FirefoxOptions getFireFoxOptions() {
+        FirefoxOptions options = new FirefoxOptions();
+        options.setHeadless(true);
+        return options;
+    }
+
 }

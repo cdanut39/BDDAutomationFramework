@@ -1,17 +1,16 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class HomePage extends GeneralActions {
 
+    String user = prop.getProperty("USER");
 
-    @FindBy(xpath = "//span[text()=' Contul meu ']")
+    @FindBy(id = "my_account")
     private WebElement contulMeuButton;
-
-    @FindBy(xpath = "//div[@class='ph-dropdown-inner']//strong[text()='Salut, Cristea Danut']")
-    private WebElement welcomeMessage;
 
     @FindBy(id = "searchboxTrigger")
     private WebElement searchBox;
@@ -24,17 +23,18 @@ public class HomePage extends GeneralActions {
         PageFactory.initElements(driver, this);
     }
 
-    public void hoverContulMeu() throws Exception {
+    public void hoverContulMeu()  {
         actionMove(contulMeuButton);
     }
 
-    public String getWelcomeMessageText() throws Exception {
+    public String getWelcomeMessageText() {
+        String user = prop.getProperty("USER");
         hoverContulMeu();
-        return getTextFromElement(welcomeMessage);
+        return driver.findElement(By.xpath("//div[@class='ph-dropdown-inner']//strong[text()='Salut, " + user + "']")).getText();
     }
 
 
-    public ResultsPage searchProduct(String productName) throws Exception {
+    public ResultsPage searchProduct(String productName){
         sendKeysToWebElement(searchBox, productName);
         waitAndClickElement(searchButton);
         return new ResultsPage();

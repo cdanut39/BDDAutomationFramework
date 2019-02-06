@@ -1,0 +1,414 @@
+2019-02-06 17:38:30,060  INFO [main] TestBase:49 - *******************************************************************************************
+2019-02-06 17:38:34,198  INFO [main] TestBase:61 - CHROME browser is launched!
+2019-02-06 17:38:34,198  INFO [main] WebEventListener:18 - Before navigating to: 'https://www.emag.ro/'
+2019-02-06 17:38:37,635  INFO [main] WebEventListener:22 - After navigated to:'https://www.emag.ro/'
+2019-02-06 17:38:37,636  INFO [main] MasterHooks:19 - ====================Start to run test scenario: "Login with valid credentials"====================
+2019-02-06 17:38:37,816  INFO [main] GeneralActions:33 - Trying to find Element by-> id: my_account
+2019-02-06 17:38:37,847  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> id: my_account
+2019-02-06 17:38:37,896  INFO [main] GeneralActions:118 - Web element is visible using locator-> id: my_account
+2019-02-06 17:38:37,896  INFO [main] GeneralActions:35 - Found element by-> id: my_account
+2019-02-06 17:38:37,896  INFO [main] GeneralActions:36 - Trying to click on element found by-> id: my_account
+2019-02-06 17:38:38,691  INFO [main] GeneralActions:38 - Successfully clicked on the web element found by-> id: my_account
+2019-02-06 17:38:38,727  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> id: email
+2019-02-06 17:38:38,768  INFO [main] GeneralActions:118 - Web element is visible using locator-> id: email
+2019-02-06 17:38:38,790  INFO [main] GeneralActions:67 - Clearing text from element using locator by-> id: email
+2019-02-06 17:38:38,839  INFO [main] GeneralActions:69 - Successfully cleared text from locator by-> id: email 	,before sending the keys
+2019-02-06 17:38:38,861  INFO [main] GeneralActions:70 - Trying to send keys: "cdanut04@gmail.com" to element using by-> id: email
+2019-02-06 17:38:38,974  INFO [main] GeneralActions:72 - Successfully sent the following keys: 'cdanut04@gmail.com' to element-> id: email
+2019-02-06 17:38:39,005  INFO [main] GeneralActions:33 - Trying to find Element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:38:39,028  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:38:39,072  INFO [main] GeneralActions:118 - Web element is visible using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:38:39,072  INFO [main] GeneralActions:35 - Found element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:38:39,073  INFO [main] GeneralActions:36 - Trying to click on element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:38:39,151  INFO [main] GeneralActions:38 - Successfully clicked on the web element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:38:39,194  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> id: password
+2019-02-06 17:38:39,752  INFO [main] GeneralActions:118 - Web element is visible using locator-> id: password
+2019-02-06 17:38:39,774  INFO [main] GeneralActions:67 - Clearing text from element using locator by-> id: password
+2019-02-06 17:38:39,823  INFO [main] GeneralActions:69 - Successfully cleared text from locator by-> id: password 	,before sending the keys
+2019-02-06 17:38:39,848  INFO [main] GeneralActions:70 - Trying to send keys: "Parola12!@" to element using by-> id: password
+2019-02-06 17:38:39,938  INFO [main] GeneralActions:72 - Successfully sent the following keys: 'Parola12!@' to element-> id: password
+2019-02-06 17:38:39,968  INFO [main] GeneralActions:33 - Trying to find Element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:38:39,992  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:38:40,028  INFO [main] GeneralActions:118 - Web element is visible using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:38:40,028  INFO [main] GeneralActions:35 - Found element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:38:40,029  INFO [main] GeneralActions:36 - Trying to click on element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:38:43,842  INFO [main] GeneralActions:38 - Successfully clicked on the web element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:38:43,972  INFO [main] GeneralActions:103 - Successful actions- moved and clicked on the WebElement, using locator: > id: my_account
+2019-02-06 17:38:43,994  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:38:44,015  INFO [main] WebEventListener:130 - The following text was extracted: "Salut, Cristea Danut" from the WebElement> xpath: //div[@class='ph-dropdown-inner']//strong[text()='Salut, Cristea Danut']
+2019-02-06 17:38:44,019  INFO [main] MasterHooks:24 - "Login with valid credentials" ----> PASSED
+2019-02-06 17:38:44,788  INFO [main] TestBase:49 - *******************************************************************************************
+2019-02-06 17:38:48,205  INFO [main] TestBase:61 - CHROME browser is launched!
+2019-02-06 17:38:48,206  INFO [main] WebEventListener:18 - Before navigating to: 'https://www.emag.ro/'
+2019-02-06 17:38:52,526  INFO [main] WebEventListener:22 - After navigated to:'https://www.emag.ro/'
+2019-02-06 17:38:52,526  INFO [main] MasterHooks:19 - ====================Start to run test scenario: "Login with valid credentials"====================
+2019-02-06 17:38:52,584  INFO [main] GeneralActions:33 - Trying to find Element by-> id: my_account
+2019-02-06 17:38:52,619  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> id: my_account
+2019-02-06 17:38:52,672  INFO [main] GeneralActions:118 - Web element is visible using locator-> id: my_account
+2019-02-06 17:38:52,673  INFO [main] GeneralActions:35 - Found element by-> id: my_account
+2019-02-06 17:38:52,673  INFO [main] GeneralActions:36 - Trying to click on element found by-> id: my_account
+2019-02-06 17:38:53,279  INFO [main] GeneralActions:38 - Successfully clicked on the web element found by-> id: my_account
+2019-02-06 17:38:53,417  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> id: email
+2019-02-06 17:38:53,458  INFO [main] GeneralActions:118 - Web element is visible using locator-> id: email
+2019-02-06 17:38:53,486  INFO [main] GeneralActions:67 - Clearing text from element using locator by-> id: email
+2019-02-06 17:38:53,595  INFO [main] GeneralActions:69 - Successfully cleared text from locator by-> id: email 	,before sending the keys
+2019-02-06 17:38:53,641  INFO [main] GeneralActions:70 - Trying to send keys: "cdanut04@gmail.com" to element using by-> id: email
+2019-02-06 17:38:53,771  INFO [main] GeneralActions:72 - Successfully sent the following keys: 'cdanut04@gmail.com' to element-> id: email
+2019-02-06 17:38:53,800  INFO [main] GeneralActions:33 - Trying to find Element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:38:53,823  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:38:53,870  INFO [main] GeneralActions:118 - Web element is visible using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:38:53,870  INFO [main] GeneralActions:35 - Found element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:38:53,870  INFO [main] GeneralActions:36 - Trying to click on element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:38:53,960  INFO [main] GeneralActions:38 - Successfully clicked on the web element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:38:54,022  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> id: password
+2019-02-06 17:38:54,078  INFO [main] GeneralActions:118 - Web element is visible using locator-> id: password
+2019-02-06 17:38:54,104  INFO [main] GeneralActions:67 - Clearing text from element using locator by-> id: password
+2019-02-06 17:38:54,157  INFO [main] GeneralActions:69 - Successfully cleared text from locator by-> id: password 	,before sending the keys
+2019-02-06 17:38:54,178  INFO [main] GeneralActions:70 - Trying to send keys: "Parola12!@" to element using by-> id: password
+2019-02-06 17:38:54,297  INFO [main] GeneralActions:72 - Successfully sent the following keys: 'Parola12!@' to element-> id: password
+2019-02-06 17:38:54,329  INFO [main] GeneralActions:33 - Trying to find Element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:38:54,361  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:38:54,405  INFO [main] GeneralActions:118 - Web element is visible using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:38:54,405  INFO [main] GeneralActions:35 - Found element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:38:54,405  INFO [main] GeneralActions:36 - Trying to click on element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:38:57,677  INFO [main] GeneralActions:38 - Successfully clicked on the web element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:38:57,814  INFO [main] GeneralActions:103 - Successful actions- moved and clicked on the WebElement, using locator: > id: my_account
+2019-02-06 17:38:57,832  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:38:57,872  INFO [main] WebEventListener:130 - The following text was extracted: "Salut, Cristea Danut" from the WebElement> xpath: //div[@class='ph-dropdown-inner']//strong[text()='Salut, Cristea Danut']
+2019-02-06 17:38:57,873  INFO [main] MasterHooks:24 - "Login with valid credentials" ----> PASSED
+2019-02-06 17:38:58,676  INFO [main] TestBase:49 - *******************************************************************************************
+2019-02-06 17:39:02,122  INFO [main] TestBase:61 - CHROME browser is launched!
+2019-02-06 17:39:02,122  INFO [main] WebEventListener:18 - Before navigating to: 'https://www.emag.ro/'
+2019-02-06 17:39:05,568  INFO [main] WebEventListener:22 - After navigated to:'https://www.emag.ro/'
+2019-02-06 17:39:05,568  INFO [main] MasterHooks:19 - ====================Start to run test scenario: "Login with valid credentials"====================
+2019-02-06 17:39:05,644  INFO [main] GeneralActions:33 - Trying to find Element by-> id: my_account
+2019-02-06 17:39:05,677  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> id: my_account
+2019-02-06 17:39:05,719  INFO [main] GeneralActions:118 - Web element is visible using locator-> id: my_account
+2019-02-06 17:39:05,720  INFO [main] GeneralActions:35 - Found element by-> id: my_account
+2019-02-06 17:39:05,720  INFO [main] GeneralActions:36 - Trying to click on element found by-> id: my_account
+2019-02-06 17:46:17,633  INFO [main] TestBase:49 - *******************************************************************************************
+2019-02-06 17:46:20,336  INFO [main] TestBase:55 - CHROME browser in HEADLESS mode is launched!
+2019-02-06 17:46:21,550  INFO [main] WebEventListener:18 - Before navigating to: 'https://www.emag.ro/'
+2019-02-06 17:46:25,386  INFO [main] WebEventListener:22 - After navigated to:'https://www.emag.ro/'
+2019-02-06 17:46:25,387  INFO [main] MasterHooks:19 - ====================Start to run test scenario: "Login with valid credentials"====================
+2019-02-06 17:46:25,503  INFO [main] GeneralActions:33 - Trying to find Element by-> id: my_account
+2019-02-06 17:46:25,528  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> id: my_account
+2019-02-06 17:46:25,575  INFO [main] GeneralActions:118 - Web element is visible using locator-> id: my_account
+2019-02-06 17:46:25,575  INFO [main] GeneralActions:35 - Found element by-> id: my_account
+2019-02-06 17:46:25,575  INFO [main] GeneralActions:36 - Trying to click on element found by-> id: my_account
+2019-02-06 17:46:26,101  INFO [main] GeneralActions:38 - Successfully clicked on the web element found by-> id: my_account
+2019-02-06 17:46:26,142  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> id: email
+2019-02-06 17:46:26,186  INFO [main] GeneralActions:118 - Web element is visible using locator-> id: email
+2019-02-06 17:46:26,209  INFO [main] GeneralActions:67 - Clearing text from element using locator by-> id: email
+2019-02-06 17:46:26,262  INFO [main] GeneralActions:69 - Successfully cleared text from locator by-> id: email 	,before sending the keys
+2019-02-06 17:46:26,285  INFO [main] GeneralActions:70 - Trying to send keys: "cdanut04@gmail.com" to element using by-> id: email
+2019-02-06 17:46:26,377  INFO [main] GeneralActions:72 - Successfully sent the following keys: 'cdanut04@gmail.com' to element-> id: email
+2019-02-06 17:46:26,415  INFO [main] GeneralActions:33 - Trying to find Element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:26,442  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:26,485  INFO [main] GeneralActions:118 - Web element is visible using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:26,486  INFO [main] GeneralActions:35 - Found element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:26,486  INFO [main] GeneralActions:36 - Trying to click on element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:26,574  INFO [main] GeneralActions:38 - Successfully clicked on the web element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:26,617  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> id: password
+2019-02-06 17:46:26,670  INFO [main] GeneralActions:118 - Web element is visible using locator-> id: password
+2019-02-06 17:46:26,699  INFO [main] GeneralActions:67 - Clearing text from element using locator by-> id: password
+2019-02-06 17:46:26,755  INFO [main] GeneralActions:69 - Successfully cleared text from locator by-> id: password 	,before sending the keys
+2019-02-06 17:46:26,776  INFO [main] GeneralActions:70 - Trying to send keys: "Parola12!@" to element using by-> id: password
+2019-02-06 17:46:26,848  INFO [main] GeneralActions:72 - Successfully sent the following keys: 'Parola12!@' to element-> id: password
+2019-02-06 17:46:26,887  INFO [main] GeneralActions:33 - Trying to find Element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:26,911  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:26,944  INFO [main] GeneralActions:118 - Web element is visible using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:26,944  INFO [main] GeneralActions:35 - Found element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:26,944  INFO [main] GeneralActions:36 - Trying to click on element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:30,078  INFO [main] GeneralActions:38 - Successfully clicked on the web element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:30,205  INFO [main] GeneralActions:103 - Successful actions- moved and clicked on the WebElement, using locator: > id: my_account
+2019-02-06 17:46:30,222  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:46:30,243  INFO [main] WebEventListener:130 - The following text was extracted: "Salut, Cristea Danut" from the WebElement> xpath: //div[@class='ph-dropdown-inner']//strong[text()='Salut, Cristea Danut']
+2019-02-06 17:46:30,245  INFO [main] MasterHooks:24 - "Login with valid credentials" ----> PASSED
+2019-02-06 17:46:30,890  INFO [main] TestBase:49 - *******************************************************************************************
+2019-02-06 17:46:33,000  INFO [main] TestBase:55 - CHROME browser in HEADLESS mode is launched!
+2019-02-06 17:46:34,149  INFO [main] WebEventListener:18 - Before navigating to: 'https://www.emag.ro/'
+2019-02-06 17:46:37,447  INFO [main] WebEventListener:22 - After navigated to:'https://www.emag.ro/'
+2019-02-06 17:46:37,448  INFO [main] MasterHooks:19 - ====================Start to run test scenario: "Login with valid credentials"====================
+2019-02-06 17:46:37,493  INFO [main] GeneralActions:33 - Trying to find Element by-> id: my_account
+2019-02-06 17:46:37,515  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> id: my_account
+2019-02-06 17:46:37,556  INFO [main] GeneralActions:118 - Web element is visible using locator-> id: my_account
+2019-02-06 17:46:37,556  INFO [main] GeneralActions:35 - Found element by-> id: my_account
+2019-02-06 17:46:37,556  INFO [main] GeneralActions:36 - Trying to click on element found by-> id: my_account
+2019-02-06 17:46:38,076  INFO [main] GeneralActions:38 - Successfully clicked on the web element found by-> id: my_account
+2019-02-06 17:46:38,117  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> id: email
+2019-02-06 17:46:38,157  INFO [main] GeneralActions:118 - Web element is visible using locator-> id: email
+2019-02-06 17:46:38,179  INFO [main] GeneralActions:67 - Clearing text from element using locator by-> id: email
+2019-02-06 17:46:38,226  INFO [main] GeneralActions:69 - Successfully cleared text from locator by-> id: email 	,before sending the keys
+2019-02-06 17:46:38,249  INFO [main] GeneralActions:70 - Trying to send keys: "cdanut04@gmail.com" to element using by-> id: email
+2019-02-06 17:46:38,329  INFO [main] GeneralActions:72 - Successfully sent the following keys: 'cdanut04@gmail.com' to element-> id: email
+2019-02-06 17:46:38,359  INFO [main] GeneralActions:33 - Trying to find Element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:38,381  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:38,420  INFO [main] GeneralActions:118 - Web element is visible using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:38,421  INFO [main] GeneralActions:35 - Found element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:38,421  INFO [main] GeneralActions:36 - Trying to click on element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:38,500  INFO [main] GeneralActions:38 - Successfully clicked on the web element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:38,539  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> id: password
+2019-02-06 17:46:39,131  INFO [main] GeneralActions:118 - Web element is visible using locator-> id: password
+2019-02-06 17:46:39,160  INFO [main] GeneralActions:67 - Clearing text from element using locator by-> id: password
+2019-02-06 17:46:39,232  INFO [main] GeneralActions:69 - Successfully cleared text from locator by-> id: password 	,before sending the keys
+2019-02-06 17:46:39,257  INFO [main] GeneralActions:70 - Trying to send keys: "Parola12!@" to element using by-> id: password
+2019-02-06 17:46:39,328  INFO [main] GeneralActions:72 - Successfully sent the following keys: 'Parola12!@' to element-> id: password
+2019-02-06 17:46:39,352  INFO [main] GeneralActions:33 - Trying to find Element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:39,370  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:39,428  INFO [main] GeneralActions:118 - Web element is visible using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:39,428  INFO [main] GeneralActions:35 - Found element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:39,428  INFO [main] GeneralActions:36 - Trying to click on element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:42,263  INFO [main] GeneralActions:38 - Successfully clicked on the web element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:42,387  INFO [main] GeneralActions:103 - Successful actions- moved and clicked on the WebElement, using locator: > id: my_account
+2019-02-06 17:46:42,413  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:46:42,439  INFO [main] WebEventListener:130 - The following text was extracted: "Salut, Cristea Danut" from the WebElement> xpath: //div[@class='ph-dropdown-inner']//strong[text()='Salut, Cristea Danut']
+2019-02-06 17:46:42,439  INFO [main] MasterHooks:24 - "Login with valid credentials" ----> PASSED
+2019-02-06 17:46:43,066  INFO [main] TestBase:49 - *******************************************************************************************
+2019-02-06 17:46:45,160  INFO [main] TestBase:55 - CHROME browser in HEADLESS mode is launched!
+2019-02-06 17:46:46,302  INFO [main] WebEventListener:18 - Before navigating to: 'https://www.emag.ro/'
+2019-02-06 17:46:49,394  INFO [main] WebEventListener:22 - After navigated to:'https://www.emag.ro/'
+2019-02-06 17:46:49,394  INFO [main] MasterHooks:19 - ====================Start to run test scenario: "Login with valid credentials"====================
+2019-02-06 17:46:49,431  INFO [main] GeneralActions:33 - Trying to find Element by-> id: my_account
+2019-02-06 17:46:49,456  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> id: my_account
+2019-02-06 17:46:49,494  INFO [main] GeneralActions:118 - Web element is visible using locator-> id: my_account
+2019-02-06 17:46:49,494  INFO [main] GeneralActions:35 - Found element by-> id: my_account
+2019-02-06 17:46:49,495  INFO [main] GeneralActions:36 - Trying to click on element found by-> id: my_account
+2019-02-06 17:46:49,924  INFO [main] GeneralActions:38 - Successfully clicked on the web element found by-> id: my_account
+2019-02-06 17:46:50,053  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> id: email
+2019-02-06 17:46:50,088  INFO [main] GeneralActions:118 - Web element is visible using locator-> id: email
+2019-02-06 17:46:50,110  INFO [main] GeneralActions:67 - Clearing text from element using locator by-> id: email
+2019-02-06 17:46:50,165  INFO [main] GeneralActions:69 - Successfully cleared text from locator by-> id: email 	,before sending the keys
+2019-02-06 17:46:50,191  INFO [main] GeneralActions:70 - Trying to send keys: "cdanut04@gmail.com" to element using by-> id: email
+2019-02-06 17:46:50,268  INFO [main] GeneralActions:72 - Successfully sent the following keys: 'cdanut04@gmail.com' to element-> id: email
+2019-02-06 17:46:50,308  INFO [main] GeneralActions:33 - Trying to find Element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:50,332  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:50,373  INFO [main] GeneralActions:118 - Web element is visible using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:50,374  INFO [main] GeneralActions:35 - Found element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:50,374  INFO [main] GeneralActions:36 - Trying to click on element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:50,485  INFO [main] GeneralActions:38 - Successfully clicked on the web element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:50,524  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> id: password
+2019-02-06 17:46:50,570  INFO [main] GeneralActions:118 - Web element is visible using locator-> id: password
+2019-02-06 17:46:50,595  INFO [main] GeneralActions:67 - Clearing text from element using locator by-> id: password
+2019-02-06 17:46:50,646  INFO [main] GeneralActions:69 - Successfully cleared text from locator by-> id: password 	,before sending the keys
+2019-02-06 17:46:50,667  INFO [main] GeneralActions:70 - Trying to send keys: "Parola12!@" to element using by-> id: password
+2019-02-06 17:46:50,735  INFO [main] GeneralActions:72 - Successfully sent the following keys: 'Parola12!@' to element-> id: password
+2019-02-06 17:46:50,763  INFO [main] GeneralActions:33 - Trying to find Element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:50,790  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:50,835  INFO [main] GeneralActions:118 - Web element is visible using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:50,835  INFO [main] GeneralActions:35 - Found element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:50,835  INFO [main] GeneralActions:36 - Trying to click on element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:53,457  INFO [main] GeneralActions:38 - Successfully clicked on the web element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:46:53,585  INFO [main] GeneralActions:103 - Successful actions- moved and clicked on the WebElement, using locator: > id: my_account
+2019-02-06 17:46:53,612  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:46:53,643  INFO [main] WebEventListener:130 - The following text was extracted: "Salut, Cristea Danut" from the WebElement> xpath: //div[@class='ph-dropdown-inner']//strong[text()='Salut, Cristea Danut']
+2019-02-06 17:46:53,643  INFO [main] MasterHooks:24 - "Login with valid credentials" ----> PASSED
+2019-02-06 17:46:54,266  INFO [main] TestBase:49 - *******************************************************************************************
+2019-02-06 17:46:56,350  INFO [main] TestBase:55 - CHROME browser in HEADLESS mode is launched!
+2019-02-06 17:46:57,511  INFO [main] WebEventListener:18 - Before navigating to: 'https://www.emag.ro/'
+2019-02-06 17:47:00,597  INFO [main] WebEventListener:22 - After navigated to:'https://www.emag.ro/'
+2019-02-06 17:47:00,597  INFO [main] MasterHooks:19 - ====================Start to run test scenario: "Login with valid credentials"====================
+2019-02-06 17:47:00,641  INFO [main] GeneralActions:33 - Trying to find Element by-> id: my_account
+2019-02-06 17:47:00,665  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> id: my_account
+2019-02-06 17:47:00,708  INFO [main] GeneralActions:118 - Web element is visible using locator-> id: my_account
+2019-02-06 17:47:00,708  INFO [main] GeneralActions:35 - Found element by-> id: my_account
+2019-02-06 17:47:00,708  INFO [main] GeneralActions:36 - Trying to click on element found by-> id: my_account
+2019-02-06 17:47:01,118  INFO [main] GeneralActions:38 - Successfully clicked on the web element found by-> id: my_account
+2019-02-06 17:47:01,240  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> id: email
+2019-02-06 17:47:01,291  INFO [main] GeneralActions:118 - Web element is visible using locator-> id: email
+2019-02-06 17:47:01,314  INFO [main] GeneralActions:67 - Clearing text from element using locator by-> id: email
+2019-02-06 17:47:01,361  INFO [main] GeneralActions:69 - Successfully cleared text from locator by-> id: email 	,before sending the keys
+2019-02-06 17:47:01,384  INFO [main] GeneralActions:70 - Trying to send keys: "cdanut04@gmail.com" to element using by-> id: email
+2019-02-06 17:47:01,459  INFO [main] GeneralActions:72 - Successfully sent the following keys: 'cdanut04@gmail.com' to element-> id: email
+2019-02-06 17:47:01,484  INFO [main] GeneralActions:33 - Trying to find Element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:47:01,506  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:47:01,551  INFO [main] GeneralActions:118 - Web element is visible using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:47:01,551  INFO [main] GeneralActions:35 - Found element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:47:01,551  INFO [main] GeneralActions:36 - Trying to click on element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:47:01,640  INFO [main] GeneralActions:38 - Successfully clicked on the web element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:47:01,686  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> id: password
+2019-02-06 17:47:01,732  INFO [main] GeneralActions:118 - Web element is visible using locator-> id: password
+2019-02-06 17:47:01,752  INFO [main] GeneralActions:67 - Clearing text from element using locator by-> id: password
+2019-02-06 17:47:01,800  INFO [main] GeneralActions:69 - Successfully cleared text from locator by-> id: password 	,before sending the keys
+2019-02-06 17:47:01,821  INFO [main] GeneralActions:70 - Trying to send keys: "Parola12!@" to element using by-> id: password
+2019-02-06 17:47:01,909  INFO [main] GeneralActions:72 - Successfully sent the following keys: 'Parola12!@' to element-> id: password
+2019-02-06 17:47:01,933  INFO [main] GeneralActions:33 - Trying to find Element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:47:01,965  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:47:02,005  INFO [main] GeneralActions:118 - Web element is visible using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:47:02,005  INFO [main] GeneralActions:35 - Found element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:47:02,006  INFO [main] GeneralActions:36 - Trying to click on element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:47:04,824  INFO [main] GeneralActions:38 - Successfully clicked on the web element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:47:04,936  INFO [main] GeneralActions:103 - Successful actions- moved and clicked on the WebElement, using locator: > id: my_account
+2019-02-06 17:47:04,949  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:04,971  INFO [main] WebEventListener:130 - The following text was extracted: "Salut, Cristea Danut" from the WebElement> xpath: //div[@class='ph-dropdown-inner']//strong[text()='Salut, Cristea Danut']
+2019-02-06 17:47:04,971  INFO [main] MasterHooks:24 - "Login with valid credentials" ----> PASSED
+2019-02-06 17:47:05,591  INFO [main] TestBase:49 - *******************************************************************************************
+2019-02-06 17:47:07,711  INFO [main] TestBase:55 - CHROME browser in HEADLESS mode is launched!
+2019-02-06 17:47:08,870  INFO [main] WebEventListener:18 - Before navigating to: 'https://www.emag.ro/'
+2019-02-06 17:47:12,370  INFO [main] WebEventListener:22 - After navigated to:'https://www.emag.ro/'
+2019-02-06 17:47:12,370  INFO [main] MasterHooks:19 - ====================Start to run test scenario: "Search a valid product"====================
+2019-02-06 17:47:12,408  INFO [main] GeneralActions:33 - Trying to find Element by-> id: my_account
+2019-02-06 17:47:12,429  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> id: my_account
+2019-02-06 17:47:12,466  INFO [main] GeneralActions:118 - Web element is visible using locator-> id: my_account
+2019-02-06 17:47:12,466  INFO [main] GeneralActions:35 - Found element by-> id: my_account
+2019-02-06 17:47:12,467  INFO [main] GeneralActions:36 - Trying to click on element found by-> id: my_account
+2019-02-06 17:47:13,093  INFO [main] GeneralActions:38 - Successfully clicked on the web element found by-> id: my_account
+2019-02-06 17:47:13,125  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> id: email
+2019-02-06 17:47:13,171  INFO [main] GeneralActions:118 - Web element is visible using locator-> id: email
+2019-02-06 17:47:13,195  INFO [main] GeneralActions:67 - Clearing text from element using locator by-> id: email
+2019-02-06 17:47:13,258  INFO [main] GeneralActions:69 - Successfully cleared text from locator by-> id: email 	,before sending the keys
+2019-02-06 17:47:13,284  INFO [main] GeneralActions:70 - Trying to send keys: "cdanut04@gmail.com" to element using by-> id: email
+2019-02-06 17:47:13,369  INFO [main] GeneralActions:72 - Successfully sent the following keys: 'cdanut04@gmail.com' to element-> id: email
+2019-02-06 17:47:13,397  INFO [main] GeneralActions:33 - Trying to find Element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:47:13,418  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:47:13,457  INFO [main] GeneralActions:118 - Web element is visible using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:47:13,457  INFO [main] GeneralActions:35 - Found element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:47:13,457  INFO [main] GeneralActions:36 - Trying to click on element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:47:13,534  INFO [main] GeneralActions:38 - Successfully clicked on the web element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:47:13,576  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> id: password
+2019-02-06 17:47:13,626  INFO [main] GeneralActions:118 - Web element is visible using locator-> id: password
+2019-02-06 17:47:13,653  INFO [main] GeneralActions:67 - Clearing text from element using locator by-> id: password
+2019-02-06 17:47:13,702  INFO [main] GeneralActions:69 - Successfully cleared text from locator by-> id: password 	,before sending the keys
+2019-02-06 17:47:13,742  INFO [main] GeneralActions:70 - Trying to send keys: "Parola12!@" to element using by-> id: password
+2019-02-06 17:47:13,827  INFO [main] GeneralActions:72 - Successfully sent the following keys: 'Parola12!@' to element-> id: password
+2019-02-06 17:47:13,853  INFO [main] GeneralActions:33 - Trying to find Element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:47:13,875  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:47:13,908  INFO [main] GeneralActions:118 - Web element is visible using locator-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:47:13,909  INFO [main] GeneralActions:35 - Found element by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:47:13,909  INFO [main] GeneralActions:36 - Trying to click on element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:47:17,217  INFO [main] GeneralActions:38 - Successfully clicked on the web element found by-> xpath: //button[contains(text(),'Continua')]
+2019-02-06 17:47:17,252  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> id: searchboxTrigger
+2019-02-06 17:47:17,296  INFO [main] GeneralActions:118 - Web element is visible using locator-> id: searchboxTrigger
+2019-02-06 17:47:17,319  INFO [main] GeneralActions:67 - Clearing text from element using locator by-> id: searchboxTrigger
+2019-02-06 17:47:17,375  INFO [main] GeneralActions:69 - Successfully cleared text from locator by-> id: searchboxTrigger 	,before sending the keys
+2019-02-06 17:47:17,398  INFO [main] GeneralActions:70 - Trying to send keys: "telefon samsung" to element using by-> id: searchboxTrigger
+2019-02-06 17:47:17,627  INFO [main] GeneralActions:72 - Successfully sent the following keys: 'telefon samsung' to element-> id: searchboxTrigger
+2019-02-06 17:47:17,668  INFO [main] GeneralActions:33 - Trying to find Element by-> xpath: //button[@class='btn btn-default searchbox-submit-button']
+2019-02-06 17:47:17,692  INFO [main] GeneralActions:116 - Waiting for visibility of web element using locator-> xpath: //button[@class='btn btn-default searchbox-submit-button']
+2019-02-06 17:47:17,751  INFO [main] GeneralActions:118 - Web element is visible using locator-> xpath: //button[@class='btn btn-default searchbox-submit-button']
+2019-02-06 17:47:17,751  INFO [main] GeneralActions:35 - Found element by-> xpath: //button[@class='btn btn-default searchbox-submit-button']
+2019-02-06 17:47:17,751  INFO [main] GeneralActions:36 - Trying to click on element found by-> xpath: //button[@class='btn btn-default searchbox-submit-button']
+2019-02-06 17:47:21,186  INFO [main] GeneralActions:38 - Successfully clicked on the web element found by-> xpath: //button[@class='btn btn-default searchbox-submit-button']
+2019-02-06 17:47:21,209  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,232  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy A8 (2018), Dual SIM, 32GB, 4G, Gold" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,232  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,252  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy S8, 64GB, 4G, Midnight Black" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,252  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,269  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy A7 (2018), Dual Sim, 64GB, 4G, Black" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,270  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,293  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy J4 Plus (2018), Dual Sim, 32GB, 4G, Black" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,294  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,313  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy J5 (2017), Dual Sim, 16GB, 4G, Black" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,313  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,335  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy J6 Plus (2018), Dual Sim, 32GB, 4G, Black" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,335  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,355  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy A6 (2018), Dual SIM, 32GB, 4G, Black" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,355  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,393  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy A6 Plus (2018), Dual SIM, 32GB, 4G, Gold" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,393  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,419  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy J4 Plus (2018), Dual Sim, 32GB, 4G, Gold" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,419  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,448  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy Note 9, Dual SIM, 128GB, 6GB RAM, 4G, Midnight Black" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,449  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,470  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy J6 (2018), Dual SIM, 32GB, 4G, Black" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,471  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,493  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy Grand Prime Plus G532, Dual Sim, 8GB, 4G, Gold" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,493  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,511  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy A6 Plus (2018), Dual SIM, 32GB, 4G, Black" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,512  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,531  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy S9 Plus, Dual SIM, 6GB RAM, 64GB, 4G, Black" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,531  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,548  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy A6 (2018), Dual SIM, 32GB, 4G, Gold" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,548  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,564  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy A8 (2018), Dual SIM, 32GB, 4G, Black" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,564  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,580  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy A6 (2018), Dual SIM, 32GB, 4G, Orchid Gray" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,580  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,598  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy J6 Plus (2018), Dual Sim, 32GB, 4G, Red" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,598  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,616  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy Grand Prime Plus G532, Dual Sim, 8GB, 4G, Black" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,617  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,634  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy J6 (2018), Dual SIM, 32GB, 4G, Gold" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,634  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,654  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy J3 (2017), Dual SIM, 16GB, 4G, Gold" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,654  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,675  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy A9 (2018), Dual SIM, 128GB, 6GB RAM, 4G, Negru" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,675  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,696  INFO [main] WebEventListener:130 - The following text was extracted: "Pachet Promo Telefon mobil Samsung Galaxy J8 2018 (J810FD), Dual SIM, 64GB , 4GB RAM, 4G, Black+Suport universal pentru dispozitive mobile prindere adeziv" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,696  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,715  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy Grand Prime Plus G532, Dual Sim, 8GB, 4G, Silver" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,715  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,733  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy Grand Prime Pro J250FD ( J2 Pro 2018), Dual Sim, 16GB, 4G, Blue-Silver" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,733  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,751  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy A8 (2018), Dual SIM, 32GB, 4G, Orchid Gray" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,752  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,770  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy J4 Plus (2018), Dual Sim, 32GB, 4G, Pink" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,770  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,787  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy S7, 32GB, 4G, Black" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,787  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,805  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy J5 (2017), Dual Sim, 16GB, 4G, Gold" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,805  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,823  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy J4 (2018), Dual Sim, 16GB, 4G, Black" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,823  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,843  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy J6 (2018), Dual SIM, 32GB, 4G, Orchid Gray" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,843  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,866  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon Mobil SAMSUNG Galaxy J1 Mini Prime Dual Sim 8GB 3G Alb" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,867  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,886  INFO [main] WebEventListener:130 - The following text was extracted: "Pachet Promo Telefon mobil Samsung Galaxy Grand Prime Plus G532, Dual Sim, 8GB, 4G, Gold + Folie Sticla Samsung Galaxy Grand Prime Plus" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,886  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,905  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy J3 (2017), Dual SIM, 16GB, 4G, Blue Coral" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,905  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,926  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy Grand Prime+, Dual Sim, 8GB, 4G, Pink Gold" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,927  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,945  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy J7 (2017), Dual Sim, 16GB, 4G, Blue Silver" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,945  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,962  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon Mobil SAMSUNG Galaxy J2 Prime Dual Sim 8GB LTE 4G Auriu" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,963  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,981  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy J4 2018, Dual Sim, 16GB, 2GB RAM Lavender" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,981  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:21,999  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy S9, Dual SIM, 64GB, 4G, Black" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:21,999  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:22,016  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy A7 (2018), Dual Sim, 64GB, 4G, Gold" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:22,016  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:22,034  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy Note 8, Dual SIM, 64GB, 6GB RAM, 4G, Midnight Black" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:22,035  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:22,053  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy S9 Plus, Dual SIM, 6GB RAM, 64GB, 4G, Blue" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:22,054  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:22,074  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy S9, Dual SIM, 64GB, 4G, Blue" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:22,075  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:22,104  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy S9 Plus, Dual SIM, 64GB, 6GB RAM, 4G, Gold" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:22,105  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:22,140  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy A7 (2018), Dual Sim, 64GB, 4G, Blue" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:22,140  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:22,166  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy S9 Plus, Dual SIM, 64GB, 6GB RAM, 4G, Purple" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:22,166  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:22,188  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy A9 (2018), Dual SIM, 128GB, 6GB RAM, 4G, Blue" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:22,188  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:22,206  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy A6 Plus (2018), Dual SIM, 32GB, 4G, Orchid Gray" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:22,207  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:22,224  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy J7 (2017), Dual Sim, 16GB, 4G, Black" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:22,224  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:22,242  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy J6 Plus (2018), Dual Sim, 32GB, 4G, Gray" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:22,242  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:22,261  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy S7, 32GB, 4G, Gold" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:22,261  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:22,280  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy Note 9, Dual SIM, 128GB, 6GB RAM, 4G, Ocean Blue" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:22,280  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:22,298  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy Note 9, Dual SIM, 512GB, 4G, Midnight Black" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:22,299  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:22,320  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy A9 (2018), Dual SIM, 128GB, 6GB RAM, 4G, Roz" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:22,321  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:22,338  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy Note 8, Dual SIM, 64GB, 6GB RAM, 4G, Blue" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:22,339  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:22,355  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy S8, 64GB, 4G, Coral Blue" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:22,356  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:22,371  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy S9, Dual SIM, 64GB, 4G, Gold" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:22,371  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:22,387  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy S8 Plus, Dual Sim, 64GB, 4G, Midnight Black" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:22,387  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:22,404  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy S9, Dual SIM, 64GB, 4G, Purple" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:22,404  INFO [main] WebEventListener:145 - Before getting the text...
+2019-02-06 17:47:22,422  INFO [main] WebEventListener:130 - The following text was extracted: "Telefon mobil Samsung Galaxy S6, 32GB, 4G, Black" from the WebElement> xpath: //h2/a
+2019-02-06 17:47:22,433  INFO [main] MasterHooks:24 - "Search a valid product" ----> FAILED
+2019-02-06 17:47:22,691  INFO [main] MasterHooks:28 - Screenshot taken for test scenario: "Search a valid product"
+2019-02-06 17:47:23,304  INFO [main] TestBase:49 - *******************************************************************************************

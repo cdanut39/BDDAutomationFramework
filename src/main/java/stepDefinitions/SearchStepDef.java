@@ -4,8 +4,13 @@ import base.TestBase;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.Factory;
+import org.testng.annotations.Test;
 import pages.*;
+
+import java.util.function.Predicate;
 
 
 public class SearchStepDef extends TestBase {
@@ -19,7 +24,6 @@ public class SearchStepDef extends TestBase {
     //preconditions of the test
     @Given("^user is logged in$")
     public void user_is_logged_in() throws Exception {
-        TestBase.intialization();
         defaultPage = new DefaultPage();
         emailPage = defaultPage.clickOnSignInButton();
         emailPage.insertEmail();
@@ -34,12 +38,8 @@ public class SearchStepDef extends TestBase {
         resultsPage = homePage.searchProduct(productName);
 
     }
-
     @Then("^a page with \"(.*)\" is displayed$")
-    public void a_page_with_expected_product_is_displayed(String resultName) {
-        //check if all displayed products contain the expected result
-        for (boolean flag : resultsPage.containsProductsName(resultName)) {
-            Assert.assertTrue(flag);
-        }
+    public void a_page_with_expected_product_is_displayed(String keyword) {
+        Assert.assertEquals(resultsPage.getListSizeByKeyword(keyword), resultsPage.getListSizeOfAllProducts());
     }
 }

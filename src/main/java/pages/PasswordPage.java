@@ -18,8 +18,8 @@ public class PasswordPage extends GeneralActions {
         sendKeysToWebElement(password_input, prop.getProperty("PASSWORD"));
     }
 
-    public HomePage clickOnContinuaButton() {
-        continua_button.click();
+    public HomePage clickOnContinuaButton() throws InterruptedException {
+        waitAndClickElement(continua_button);
         return new HomePage();
     }
 }
